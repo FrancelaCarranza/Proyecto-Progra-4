@@ -28,7 +28,7 @@
 
         @else
         <div class="alert alert-danger mx-auto" role="alert">
-        Sorry we couldn't find any product with the name: {{$product}}
+            Sorry we couldn't find any product with the name: {{$product}}
         </div>
 
 

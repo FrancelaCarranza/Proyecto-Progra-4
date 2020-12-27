@@ -23,7 +23,7 @@
 
 
                     <tr>
-                        
+
                         <td> {{$row->name}}</td>
                         <td>
 
@@ -73,38 +73,38 @@
 
 
             <div class="row">
-            
-            <div class="col-12">
-            
-            <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Total products</th>
-      <th scope="col">Total Price</th>
-      <th scope="col">Checkout</th>
-    </tr>
-  </thead>
-  <tbody>
 
-@if(Cart::getTotal()>0)
-<tr>
-     
-      <td> {{count(Cart::getContent())}}</td>
-      <th> $ {{Cart::getTotal()}}</th>
-      <td>
-       <a href="{{route('cart.checkout') }}" class="btn btn-info btn-block"> CheckOut</a>
-      </td>
-      
-    </tr>
-@endif
+                <div class="col-12">
 
-   
-  </tbody>
-</table>
-            
-            
-            </div>
-            
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Total products</th>
+                                <th scope="col">Total Price</th>
+                                <th scope="col">Checkout</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @if(Cart::getTotal()>0)
+                            <tr>
+
+                                <td> {{count(Cart::getContent())}}</td>
+                                <th> $ {{Cart::getTotal()}}</th>
+                                <td>
+                                    <a href="{{route('cart.checkout') }}" class="btn btn-info btn-block"> CheckOut</a>
+                                </td>
+
+                            </tr>
+                            @endif
+
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+
             </div>
 
         </div>

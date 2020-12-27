@@ -13,11 +13,11 @@
 
             <h3>Checkout</h3>
 
-        
+
 
             <form action="{{ route('orders.store') }}" method="POST">
-            @csrf
-       
+                @csrf
+
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Complete name" name="name">

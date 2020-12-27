@@ -33,5 +33,3 @@ Route::resource('/orders','App\Http\Controllers\orderController');
 Route::post('/card-add','App\Http\Controllers\cartController@add')->name('cart.add');
 Route::get('/card-checkout','App\Http\Controllers\cartController@checkout')->name('cart.checkout')->middleware('auth');
 Route::get('/userOrder','App\Http\Controllers\orderController@userOrder')->name('orders.userOrder');
-
-

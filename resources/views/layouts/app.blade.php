@@ -24,7 +24,7 @@
     <style>
     #navbar {
         background: #87643B;
-        
+
 
     }
 
@@ -36,14 +36,17 @@
 
     #logout a {
         color: #000;
-        
+
     }
 
 
     body {
-        background: #D1913C;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #D1913C;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFD194, #D1913C);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFD194, #D1913C);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
     </style>
@@ -151,20 +154,20 @@ background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, F
                                 {{ Auth::user()->name }}
                             </a>
 
-                          
+
 
                             <div id='logout' class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            
+
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                        
-                                                
+
+
                                     {{ __('Logout') }}
-                            
+
 
                                 </a>
 
-                            
+
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
